@@ -1,3 +1,4 @@
+import classes from '../css/Wrap.module.css'
 export default function Wrap(props) {
-    return <div>{props.children}</div>
+    return <div className={classes.wrap}>{props.children}</div>
 }

@@ -1,0 +1,33 @@
+
+.idea {
+    font-size: 4vw;
+    width: auto;
+    margin: auto;
+    text-align: center;
+    /* border: 1px solid blueviolet; */
+}
+
+.share {
+    font-size: 2vw;
+    width: auto;
+    text-align: center;
+    margin: 10px auto 0 auto;
+    color: grey;
+}
+
+.open {
+    font-size: 1vw;
+    width: 25vw;
+    color: grey;
+    margin: 10px auto 10px auto;
+    text-align: center;
+}
+
+/* style={{margin: 'auto', width: '500px', fontSize: '4rem'}} */
+
+@media only screen and (max-width: 600px) {
+    .contact {
+        /* font-size: 1vw; */
+    }
+    
+}

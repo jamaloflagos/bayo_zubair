@@ -1,0 +1,405 @@
+.projects  {
+    width: 100%;
+    color: white;
+    display: grid;
+    grid-template-columns: 300px auto;
+    border: 1px solid grey;
+    height: 500px;
+    margin-top: 100px;
+    border-radius: 50px;
+    position: relative;
+}
+
+.projectArrow {
+    display: grid;
+    grid-template-columns: 20px auto;
+    column-gap: 50px;
+    margin: 100px 0 0 0;
+    color: white;
+}
+
+
+
+.name {
+    background: transparent;
+    /* width: ; */
+    /* text-align: center; */
+    border-radius: 5px;
+    /* border: 1px solid #9acff2; */
+    margin: 100px 0 0 100px;
+    /* margin-bottom: 40px;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 280px;
+    right: 320px;
+    z-index: 3;
+    color: white;
+    transition:  5s; */
+}
+
+.nameOdd {
+    text-align: justify;
+    background: transparent;
+    margin: 105px 0 0 170px;
+    /* width: auto; */
+    /* border: 1px solid white; */
+
+}
+
+
+.description {
+    color: grey;
+    opacity: 1;
+    /* background: grey; */
+    border-radius: 5px;
+    font-size: 0.9rem;
+    text-align: justify;
+    font-family: 'Roboto Slab', serif;
+    line-height: 25px;
+    width: 300px;
+    margin: 50px 0 0 100px;
+    /* margin-bottom: 40px;
+    position: absolute;
+    height: 120px;
+    z-index: 2;
+    right: 65px;
+    bottom: 120px;
+    width: 500px;
+    text-align: start;
+    padding: 20px;
+    border: 1px solid white; */
+
+}
+
+.descriptionOdd {
+    color: grey;
+    opacity: 1;
+    /* background: grey; */
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-family: 'Roboto Slab', serif;
+    line-height: 25px;
+    width: 300px;
+    margin: 50px 0 0 170px;
+    text-align: justify;
+    /* font-family: 'Exo 2', sans-serif; */
+
+    /* border: 1px solid blue; */
+}
+
+.stack {
+    color: grey;
+    opacity: 1;
+    width: auto;
+    margin: 30px 0 0 100px;
+    text-align: justify;
+    /* position: absolute;
+    right: 75px;
+    bottom: 100px;
+    background: white; */
+}
+
+.stackOdd {
+    color: grey;
+    opacity: 1;
+    width: auto;
+    margin: 30px 0 0 170px;
+    text-align: justify;
+}
+
+.projectLink {
+    background: transparent;
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 65px;
+    bottom: 40px;
+}
+
+.projectLinkOdd {
+    background: transparent;
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+}
+
+.projectId {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px dotted #9acff2;
+    text-align: center;
+    padding-top: 5px;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+
+}
+
+.projectIdOdd {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px dotted #9acff2;
+    text-align: center;
+    padding-top: 5px;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+}
+
+.projectDetailsOdd {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.projectImage{
+    border-radius: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 300px;
+    height: 400px;
+}
+.projectImageOdd {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    border-radius: 50px;
+    width: 300px;
+    height: 400px;
+
+}
+
+@media only screen and (max-width: 599px) {
+    .projectIdOdd {
+        /* right: 0; */
+        /* position: relative; */
+        top: 0;
+    }
+
+    .nameOdd {
+        /* border: 1px solid green; */
+    }
+
+    .projectImageOdd {
+        margin-left: 0;
+        left: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .projects {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 250px 200px;
+        row-gap: 30px;
+    }
+    .projectImage, .projectImageOdd {
+        height: 200px;
+        width: 200px;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+
+    .projectImageOdd {
+        margin-top: 0;
+
+    }
+
+    .name, .nameOdd {
+        margin: auto;
+        width: 80%;
+        text-align: justify;
+    }
+
+    .description, .descriptionOdd {
+        margin: 10px auto;
+        font-size: 3vw;
+        line-height: 20px;
+        text-align: justify;
+        width: 80%;
+    }
+
+    .stack, .stackOdd {
+        margin: auto;
+        width: 80%;
+        font-size: 4vw;
+
+    }
+
+    .projectLink {
+        bottom: 20px;
+        right: 30px;
+    }
+
+    .projectId {
+        top: 20px;
+        left: 10px;
+    }
+
+    .projectIdOdd {
+        position: absolute;
+        left: 230px;
+        top: 20px;
+    }
+
+    .projectImageOdd {
+        top: 250px;
+    }
+
+    .projectLinkOdd {
+        top: 460px ;
+        left: 50px;
+    }
+
+    .nameOdd {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .projects {
+        height: 400px;
+    }
+    .projectImage, .projectImageOdd {
+        height: 250px;
+        width: 250px;
+        margin-top: 75px;
+        margin-left: 30px;
+    }
+    
+
+    .projectImageOdd {
+        top: 0;
+        right: 30px;
+
+    }
+
+    .projectDetails, .projectDetailsOdd {
+        padding: 0;
+        height: 400px;
+        /* position: absolute;
+        left: 0; */
+    }
+
+    .descriptionOdd, .description, .stack, .stackOdd {
+        margin-top: 20px;
+    }
+    
+    .nameOdd {
+        margin-top: 120px;
+    }
+     .name, .description, .stack {
+        margin-left: 10px;
+    }
+    .nameOdd, .descriptionOdd, .stackOdd {
+        margin-left: 30px;
+    }
+
+    .projectIdOdd {
+        top: 50px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .nameOdd,.descriptionOdd, .stackOdd {
+        margin-left: 50px;
+    }
+
+    .name, .description, .stack {
+        margin-left: 30px;
+    }
+
+    .description, .descriptionOdd {
+        font-size: 1.5vw;
+        width: 30vw;
+    }
+
+    .projectLink {
+        left: 50px;
+        bottom: 20px;
+    }
+
+    .projectLinkOdd {
+        left: 500px;
+        bottom: 20px;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    .projectImage, .projectImageOdd {
+        width: 300px;
+        height: 400px;
+        margin-top: 50px;
+        margin-right: 50px ;
+    }
+
+    .projectImage {
+        margin-left: 50px;
+    }
+    .projects {
+        height: 500px;
+    }
+
+    .projectDetails, .projectDetailsOdd {
+        margin-top: 50px;
+    }
+
+    .name, .description, .stack {
+        margin-left: 120px;
+    }
+
+    .nameOdd, .descriptionOdd, .stackOdd {
+        margin-left: 80px;
+    }
+
+    .projectLinkOdd {
+        left: 80px;
+        bottom: -10px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .projectImage, .projectImageOdd {
+        width: 500px;
+    }
+
+    .descriptionOdd {
+        font-size: 1.5vw;
+        width: 25vw;
+    }
+
+    .nameOdd, .descriptionOdd, .stackOdd {
+        margin-left: 70px;
+    }
+
+    .name, .description, .stack {
+        margin-left: 300px;
+    }
+
+    .projectId{
+        right: 50px;
+    }
+
+    .projectIdOdd {
+        left: 50px;
+        top: 0;
+    }
+
+    .projectLink {
+        left: 85%;
+        bottom: 50px;
+    }
+}
