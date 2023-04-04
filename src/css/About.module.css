@@ -11,13 +11,20 @@
     
 }
 
+.know {
+    color: white;
+    font-size: 1rem;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
 .know::before {
-    content: '';
+    /* content: '';
     width: 0;
     height: 0;
     border-top: 10px solid transparent;
     border-left: 20px solid #9acff2;
-    border-bottom: 10px solid transparent
+    border-bottom: 10px solid transparent */
 }
 
 .aboutText {
@@ -27,23 +34,17 @@
 }
 
 .aboutArrow {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 20px auto;
     column-gap: 50px;
     margin: 0 0 50px 0;
     color: white;
-    font-size: 2vw;
+    font-size: 2vw; */
     /* border: 1px solid blue; */
 /* font-family: 'Exo 2', sans-serif; */
 
 
 }
 
-@media only screen and (min-width: 765px) and (max-width: 912px) {
-    .about {
-        position: absolute;
-        top: 80vh;
-        width: 80vw;
-    }
-}
+
 

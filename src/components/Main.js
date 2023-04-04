@@ -1,7 +1,7 @@
 import About from './About'
 import Contact from './Contact'
 import Projects from './Projects'
-import Resume from './Resume'
+import Skill from './Skill'
 import Intro from './Intro'
 import Wrap from './Wrap'
 import Header from './Header'
@@ -20,10 +20,10 @@ export default function Main() {
             
             <Wrap>
                 <Intro />
+                <Skill />
                 <About />
                 <Projects />
                 <Contact />
-                <Resume />
             </Wrap>
         </div>
     )

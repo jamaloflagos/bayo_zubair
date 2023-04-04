@@ -10,7 +10,7 @@ const menuVariants = {
         height: 0,
     },
     animation: {
-        height: 500,
+        height: '100vh',
         display: 'block',
         transition: {type: 'tween', duration: 0.5}
     },
@@ -57,7 +57,7 @@ const demacateVariants = {
 
     },
     animate: {
-        width: 400,
+        width: '80%',
         height: 1,
         opacity: 0.5,
         transition: {
@@ -136,6 +136,7 @@ export default function Menu(props) {
                                         to='about'
                                         duration={2000}
                                         delay={2000} 
+                                        offset={-100}
                                         smooth='easeOutQuad'
                                     >About Me</Link>
                                 </motion.div>
@@ -169,6 +170,7 @@ export default function Menu(props) {
                                         to='project'
                                         delay={2000}  
                                         duration={2000}
+                                        offset={-100}
                                         smooth='easeOutQuad'
                                     >My Projects</Link>
                                 </motion.div>
@@ -243,8 +245,8 @@ export default function Menu(props) {
                                 }}
                                 ></motion.div>
                         </motion.nav>
-                    </div> 
-                    <motion.span
+                        <div className={classes.new}>
+                        <motion.span
                                     variants={spanVariants}
                                     initial='initial'
                                     animate= 'animate'
@@ -278,7 +280,9 @@ export default function Menu(props) {
                                         <i class="fa-regular fa-envelope"></i>
                                     </a>
                                 </motion.div>
-                   
+                        </div>
+                    </div> 
+                    
                 </motion.div>
                  )} 
             </AnimatePresence>

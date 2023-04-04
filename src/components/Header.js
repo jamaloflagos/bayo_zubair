@@ -1,5 +1,6 @@
 import classes from './Header.module.css'
 import {motion, useCycle} from 'framer-motion'
+import {Link} from 'react-scroll'
 import Menu from './Menu'
 const menuBar1Variants = {
     initial:{width: 15, rotate: 0, y: 0},
@@ -8,7 +9,7 @@ const menuBar1Variants = {
             width: 25,
             rotate: -50,
             y: 4,
-            backgroundColor: 'white',
+            backgroundColor: 'black',
             transition: {duration: 0.5, ease: 'easeOut'}
     }, 
     hideMenuAnimation: {
@@ -45,7 +46,7 @@ const menuBar3Variants = {
         width: 25,
         rotate: 50,
         y: -4,
-        backgroundColor: 'white',
+        backgroundColor: 'black',
         transition: {duration: 0.5, ease: 'easeOut'}
         
     },
@@ -80,11 +81,8 @@ export default function Header(props) {
                     bar2Cycle={bar2CycleFunction}
                     bar3Cycle={bar3CycleFunction}
                 />
-            <motion.div
-                initial={{y: '-100vh'}}
-                animate={{y: 0, position: 'fixed', top: 10}}
-                transition={{delay: 1, duration: 1}}
-             className={classes.logo}><h1>B</h1></motion.div>
+            <div
+             className={classes.logo}><h1>B</h1></div>
             <motion.div
                 initial={{y: '-100vh'}}
                 animate={{y: 0}}
@@ -107,6 +105,26 @@ export default function Header(props) {
                     className={classes.bar3}>
                 </motion.div>
             </motion.div>
+            <div className={classes.navFlex}>
+                <Link className={classes.link}
+                    to='about'
+                    duration={2000}
+                    offset={-100}
+                    smooth='easeOutQuad'
+                >About Me</Link>
+                <Link className={classes.link}
+                    to='project'
+                    duration={2000}
+                    offset={-100}
+                    smooth='easeOutQuad'
+                >My Projects</Link>
+                <Link className={classes.link}
+                    to='contact'
+                    duration={2000}
+                    smooth='easeOutQuad'
+                >Contact Me</Link>
+                <Link className={classes.link}>My Resume</Link>
+            </div>
         </div>
     )
 }

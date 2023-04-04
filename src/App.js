@@ -2,7 +2,6 @@
 import { useState } from 'react'
 import {motion, AnimatePresence} from 'framer-motion'
 import Main from './components/Main'
-import Footer from './components/Footer'
 import Container from './components/Container'
 import classes from './css/Intro.module.css'
 
@@ -49,7 +48,6 @@ function App() {
       {showApp && (
           <Container>
             <Main />
-            <Footer />
           </Container>
       )}
     </>

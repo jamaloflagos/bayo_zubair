@@ -1,20 +1,11 @@
 import projectData from "./data"
 import classes from '../css/Projects.module.css'
-import {useMotionValue, motion, useTransform, useScroll, useMotionValueEvent } from 'framer-motion'
-import { useRef } from "react"
-import Arrow from "./Arrow"
+import {motion} from 'framer-motion'
 export default function Projects() {
-    const x = useMotionValue(0)
-const input = [-200, 0, 200]
-const output = [0, 1, 0]
-const opacity = useTransform(x, input, output)
-const { scrollY } = useScroll()
-const scrollRef = useRef(null)
+ 
 
 
-useMotionValueEvent(scrollY, "change", (late) => {
-  console.log("Page scroll: ", late, 5%2)
-})
+
     const projects = projectData.map(item => {
         const rem = item.id % 2
         return <motion.div whileInView={{scale: 1, transition:{duration: 0.5}}} initial={{scale: 0.9}}key={item.id} className={classes.projects}>
@@ -54,17 +45,14 @@ useMotionValueEvent(scrollY, "change", (late) => {
     })
     return (
         <div id="project">
-            <div className={classes.projectArrow}>
-                <Arrow />
-                <h1 style={{fontSize: '4vw'}}>Some things I have built</h1>
+                <h1 style={{fontSize: '1rem', color: 'white', marginTop: "50px"}}>Some things I have built</h1>
                 <h1 style={{width: '50vw', 
                             fontSize: '2.5vw', 
                             marginTop: '10px',
-                            marginLeft: '70px',
+                            // marginLeft: '70px',
                             color: 'grey'
                         }}
                 >They are amazing, take a look</h1>
-            </div>
             {projects}
         </div>
     )
